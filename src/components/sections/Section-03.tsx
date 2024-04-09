@@ -7,10 +7,10 @@ const Section03 = () => {
 
   const { ref: headerStateRef } = useInView({
     initialInView: false,
-    rootMargin: "-100px 0px 0px 0px",
+    rootMargin: "-100px 0px -90% 0px",
     onChange: (inView) => {
-      if (!inView) setHeaderState("light");
-      else setHeaderState("dark");
+      if (inView) setHeaderState("dark");
+      else setHeaderState("light");
     },
   });
 

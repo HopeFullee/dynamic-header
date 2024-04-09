@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Section01 isFirstSection={isFirstSection} />
+        <Section01 />
         <Section02 />
         <Section03 />
         <Section04 />

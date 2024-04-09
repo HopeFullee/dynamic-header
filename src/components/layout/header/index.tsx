@@ -10,12 +10,12 @@ const Header = () => {
       <nav
         className={clsx(
           "flex justify-between items-center h-100 w-full mx-auto px-100",
-          headerState === "light" && "bg-yellow-500",
-          headerState === "dark" && "bg-black"
+          headerState === "light" && "text-yellow-500",
+          headerState === "dark" && "text-red-500"
         )}
       >
-        <h1 className="text-white text-24">HEADER</h1>
-        <ul className="flex text-white gap-40">
+        <h1 className="text-24">HEADER</h1>
+        <ul className="flex gap-40">
           <li>nav-1</li>
           <li>nav-2</li>
           <li>nav-3</li>
